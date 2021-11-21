@@ -6,10 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css'],
 })
 export class HomepageComponent implements OnInit {
-  public on = 'On';
-  public twins = 'twins';
-  public and = ' & ';
-  public paranoid = 'Paranoid';
   constructor() {}
 
   ngOnInit(): void {
