@@ -1,1 +1,21 @@
 <app-header></app-header>
+<div class="selecMember">
+  <select
+    (change)="selectDepevent($event)"
+    name="department"
+    id="department-id"
+  >
+    <option *ngIf="!members">부서선택</option>
+    <ng-container *ngFor="let dep of department">
+      <option value="{{ dep.department }}">
+        {{ dep.department }}
+      </option>
+    </ng-container>
+  </select>
+  <select name="member" id="member-id">
+    <option *ngIf="!members">부서를 선택해 주세요</option>
+    <ng-container *ngFor="let member of members">
+      <option value="{{ member.name }}">{{ member.name }}</option>
+    </ng-container>
+  </select>
+</div>
